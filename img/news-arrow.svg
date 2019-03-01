@@ -1,0 +1,161 @@
+<svg id="HOME" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: #0084ff;
+      }
+
+      .cls-2, .cls-3, .cls-8, .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-14, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        filter: url(#filter);
+      }
+
+      .cls-4 {
+        font-size: 30px;
+        fill: #333;
+        font-weight: 600;
+      }
+
+      .cls-11, .cls-4, .cls-7 {
+        text-anchor: middle;
+      }
+
+      .cls-11, .cls-12, .cls-4 {
+        font-family: Poppins;
+      }
+
+      .cls-5 {
+        fill: #666;
+      }
+
+      .cls-5, .cls-6 {
+        font-size: 14px;
+      }
+
+      .cls-11, .cls-5 {
+        font-weight: 300;
+      }
+
+      .cls-11, .cls-6 {
+        text-transform: uppercase;
+      }
+
+      .cls-7 {
+        font-size: 35px;
+        fill: #bbb;
+      }
+
+      .cls-13, .cls-7 {
+        font-family: FontAwesome5FreeSolid, "Font Awesome 5 Free";
+      }
+
+      .cls-8 {
+        filter: url(#filter-2);
+      }
+
+      .cls-9 {
+        filter: url(#filter-3);
+      }
+
+      .cls-10 {
+        fill: #e5e5e5;
+      }
+
+      .cls-11 {
+        font-size: 11px;
+        fill: #999;
+      }
+
+      .cls-12 {
+        font-size: 16px;
+        text-anchor: end;
+      }
+    </style>
+    <filter id="filter" x="-523" y="-760" width="393" height="463" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="2.5" dy="4.33" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="3.873"/>
+      <feFlood result="flood" flood-opacity="0.05"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="-133" y="-760" width="393" height="463" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="2.5" dy="4.33" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="3.873"/>
+      <feFlood result="flood" flood-opacity="0.05"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="257" y="-760" width="393" height="463" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="2.5" dy="4.33" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="3.873"/>
+      <feFlood result="flood" flood-opacity="0.05"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="arrow_copy_2" data-name="arrow copy 2">
+    <circle class="cls-1" cx="15" cy="15" r="15"/>
+    <path id="angle-right" class="cls-2" d="M18.558,15.352a0.707,0.707,0,0,0,0-1l-3.984-3.984a0.707,0.707,0,0,0-1,0l-0.645.674a0.707,0.707,0,0,0,0,1l2.813,2.813-2.812,2.813a0.707,0.707,0,0,0,0,1l0.645,0.674a0.707,0.707,0,0,0,1,0Z"/>
+  </g>
+  <g id="services">
+    <g id="_1" data-name="1">
+      <rect id="Rounded_Rectangle_2" data-name="Rounded Rectangle 2" class="cls-3" x="-510" y="-748" width="360" height="430" rx="10" ry="10"/>
+      <text id="Novum_Global_Accelerator_During_our_3-month_accelerator_progra" data-name="Novum Global Accelerator  During our 3-month accelerator progra" class="cls-4" x="-510" y="-629.001"><tspan x="-510">Novum Global Accelerator</tspan><tspan class="cls-5" x="-510" dy="33.6">During our 3-month accelerator programme, you will be coached to maximize operations and pushed to outperform.</tspan><tspan class="cls-6" x="-510" dy="33.6">More</tspan></text>
+      <rect class="cls-1" x="-352" y="-387" width="44" height="2"/>
+      <text id="rocket" class="cls-7" x="-330.009" y="-667.005"><tspan x="-330.009">rocket</tspan></text>
+    </g>
+    <g id="_2" data-name="2">
+      <rect id="Rounded_Rectangle_2-2" data-name="Rounded Rectangle 2" class="cls-8" x="-120" y="-748" width="360" height="430" rx="10" ry="10"/>
+      <text id="Securities_Token_Offerings_Looking_to_raise_funds_and_digitize" data-name="Securities Token Offerings  Looking to raise funds and digitize" class="cls-4" x="-120" y="-629.001"><tspan x="-120">Securities Token Offerings</tspan><tspan class="cls-5" x="-120" dy="33.6">Looking to raise funds and digitize assets into tokens on the blockchain? We provide an end-to-end advisory on Securities Token Offerings.</tspan><tspan class="cls-6" x="-120" dy="33.6">More</tspan></text>
+      <text id="shield-alt" class="cls-7" x="59.99" y="-667.005"><tspan x="59.99">shield-alt</tspan></text>
+      <rect id="Rectangle_2_copy" data-name="Rectangle 2 copy" class="cls-1" x="38" y="-387" width="44" height="2"/>
+    </g>
+    <g id="_3" data-name="3">
+      <rect id="Rounded_Rectangle_2-3" data-name="Rounded Rectangle 2" class="cls-9" x="270" y="-748" width="360" height="430" rx="10" ry="10"/>
+      <text id="Initial_Coin_Offerings_If_you_are_looking_to_raise_funds_with_" data-name="Initial Coin Offerings  If you are looking to raise funds with " class="cls-4" x="270" y="-629.001"><tspan x="270">Initial Coin Offerings</tspan><tspan class="cls-5" x="270" dy="33.6">If you are looking to raise funds with utility tokens, Novum Capital provides an end-to-end advisory on Initial Coin Offerings.</tspan><tspan class="cls-6" x="270" dy="33.6">More</tspan></text>
+      <rect id="Rectangle_2_copy_2" data-name="Rectangle 2 copy 2" class="cls-1" x="428" y="-387" width="44" height="2"/>
+      <text id="coins" class="cls-7" x="449.991" y="-667.005"><tspan x="449.991">coins</tspan></text>
+    </g>
+  </g>
+  <g id="Footer">
+    <rect id="BG_e5e5e5" data-name="BG #e5e5e5" class="cls-10" x="-740" y="826" width="1600" height="150"/>
+    <text id="_2019_Novum_Global_Ventures._ALL_RIGHTS_RESERVED." data-name="© 2019 Novum Global Ventures. ALL RIGHTS RESERVED." class="cls-11" x="59.877" y="883.656"><tspan x="59.877">© 2019 Novum Global Ventures. ALL RIGHTS RESERVED.</tspan></text>
+  </g>
+  <text id="What_we_do_angle-down_Resources_angle-down_Ab" data-name="What we do angle-down          Resources angle-down          Ab" class="cls-12" x="627.936" y="-1431.855"><tspan x="627.936">What we do <tspan class="cls-13">angle-down</tspan>          Resources <tspan>angle-down</tspan>          About</tspan></text>
+  <path id="Logo_copy" data-name="Logo copy" class="cls-14" d="M-510-1446.26l30.042,30.5v7.76L-510-1438.5v-7.76Zm24.654-19.35v22.64L-510-1468v7.76l30.042,30.5v-35.87h-5.388ZM-510-1449.37l30.042,30.5v-7.76L-510-1457.13v7.76Zm75.925,12.69-18.971-17.65v17.63h-2.948v-24.79l18.971,17.64v-17.54h2.948v24.71Zm33.765,0.26a11.235,11.235,0,0,1-6.122-1.74,12.832,12.832,0,0,1-4.37-4.63,12.792,12.792,0,0,1-1.6-6.31,12.857,12.857,0,0,1,1.6-6.32,12.8,12.8,0,0,1,4.37-4.61,11.235,11.235,0,0,1,6.122-1.74,11.27,11.27,0,0,1,6.139,1.74,12.816,12.816,0,0,1,4.37,4.61,12.867,12.867,0,0,1,1.595,6.32,12.8,12.8,0,0,1-1.595,6.31,12.84,12.84,0,0,1-4.37,4.63A11.27,11.27,0,0,1-400.31-1436.42Zm0-2.64a8.344,8.344,0,0,0,4.56-1.32,9.865,9.865,0,0,0,3.33-3.61,10.392,10.392,0,0,0,1.266-5.11,10.326,10.326,0,0,0-1.266-5.1,9.865,9.865,0,0,0-3.33-3.61,8.344,8.344,0,0,0-4.56-1.32,8.318,8.318,0,0,0-4.544,1.32,9.865,9.865,0,0,0-3.33,3.61,10.3,10.3,0,0,0-1.283,5.1,10.34,10.34,0,0,0,1.283,5.11,9.865,9.865,0,0,0,3.33,3.61A8.318,8.318,0,0,0-400.31-1439.06Zm40.891,2.52-11.948-24.85h3.173l8.793,18.01,8.965-18.01h3.174Zm42.175,0.05a9.468,9.468,0,0,1-6.971-2.8,8.5,8.5,0,0,1-2.532-6.02v-16.08h2.948v16.08a6.045,6.045,0,0,0,1.786,4.29,6.648,6.648,0,0,0,4.734,1.89,6.953,6.953,0,0,0,4.873-2.24,5.666,5.666,0,0,0,1.717-3.89v-16.13h2.948v16.08a8.221,8.221,0,0,1-2.41,5.65A10.073,10.073,0,0,1-317.244-1436.49Zm57.21-.21h-2.931v-17.17l-10.422,12.04-10.11-11.9v17.03h-2.931v-24.81l13.058,15.39,13.336-15.39v24.81Zm-191.091,17.05h4.622v5.22h-0.71l-0.281-1.37h-0.039q-0.815,1.56-3.416,1.56a5.539,5.539,0,0,1-2.69-.63,4.332,4.332,0,0,1-1.773-1.75,5.332,5.332,0,0,1-.616-2.6,5.246,5.246,0,0,1,.362-1.98,4.5,4.5,0,0,1,1.023-1.56,4.584,4.584,0,0,1,1.63-1,6.1,6.1,0,0,1,2.142-.36,5.856,5.856,0,0,1,2.341.45,4.478,4.478,0,0,1,1.721,1.27l-0.9.62a3.778,3.778,0,0,0-1.376-.97,4.534,4.534,0,0,0-1.786-.35,4.462,4.462,0,0,0-2.086.48,3.555,3.555,0,0,0-1.464,1.36,3.87,3.87,0,0,0-.538,2.04,4.056,4.056,0,0,0,.531,2.1,3.577,3.577,0,0,0,1.454,1.38,4.61,4.61,0,0,0,2.1.47,3.357,3.357,0,0,0,2.481-.82,3.418,3.418,0,0,0,.818-2.52v-0.08h-3.553v-0.96Zm11.8,4.19h5.353v1.03h-6.422v-9.48h1.069v8.45Zm15.709-8.65a5.637,5.637,0,0,1,2.706.63,4.373,4.373,0,0,1,1.809,1.75,5.189,5.189,0,0,1,.636,2.59,5.132,5.132,0,0,1-.362,1.94,4.672,4.672,0,0,1-1.017,1.56,4.592,4.592,0,0,1-1.63,1.04,5.919,5.919,0,0,1-2.142.37,6,6,0,0,1-2.113-.36,4.68,4.68,0,0,1-1.633-1.01,4.53,4.53,0,0,1-1.04-1.55,5.221,5.221,0,0,1-.371-1.99,5.446,5.446,0,0,1,.361-2,4.468,4.468,0,0,1,1.024-1.57,4.644,4.644,0,0,1,1.63-1.03A5.885,5.885,0,0,1-423.613-1424.11Zm0,8.85a4.161,4.161,0,0,0,2.96-1.06,3.678,3.678,0,0,0,1.141-2.82,4.018,4.018,0,0,0-.535-2.09,3.586,3.586,0,0,0-1.46-1.38,4.632,4.632,0,0,0-2.106-.47,4.106,4.106,0,0,0-3,1.06,3.807,3.807,0,0,0-1.092,2.88,3.824,3.824,0,0,0,.534,2.02,3.59,3.59,0,0,0,1.464,1.38A4.487,4.487,0,0,0-423.613-1415.26Zm17.5-3.96a2.322,2.322,0,0,1,1.509.74,2.365,2.365,0,0,1,.531,1.61,2.011,2.011,0,0,1-.978,1.87,6.392,6.392,0,0,1-3.1.57h-4.31v-9.48h4.31a5.332,5.332,0,0,1,2.911.61,2.15,2.15,0,0,1,.909,1.93,2.143,2.143,0,0,1-.417,1.37,2.4,2.4,0,0,1-1.369.77v0.01Zm-5.275-3.66v3.21h3.241a4.181,4.181,0,0,0,2.04-.4,1.232,1.232,0,0,0,.711-1.13,1.636,1.636,0,0,0-.254-0.96,1.667,1.667,0,0,0-.858-0.54,5.944,5.944,0,0,0-1.639-.18h-3.241Zm3.241,7.42a7.468,7.468,0,0,0,1.858-.18,1.606,1.606,0,0,0,.906-0.5,1.4,1.4,0,0,0,.241-0.87,1.357,1.357,0,0,0-.671-1.26,4.845,4.845,0,0,0-2.334-.4h-3.241v3.21h3.241Zm17.156,1.03-0.92-2.24h-5.007l-0.919,2.24H-399l4.023-9.48h1.134l3.99,9.48h-1.134Zm-5.555-3.17h4.264l-2.113-5.13h-0.039Zm13.231,2.14h5.353v1.03h-6.422v-9.48h1.069v8.45Zm22.01-2.29,0.789,2.3h0.065l0.815-2.3,2.432-6.16h1.095l-3.742,9.48h-1.239l-3.756-9.48h1.141Zm18-5.13h-6.259v3.2h5.594v1.02h-5.594v3.2h6.259v1.03h-7.329v-9.48h7.329v1.03Zm13.407-1.03h1.05v9.48h-0.919l-6.181-7.61h-0.026v7.61h-1.07v-9.48h0.946l6.168,7.77h0.032v-7.77Zm6.659,0h7.824v1.03h-3.39v8.45h-1.069v-8.45h-3.365v-1.03Zm20.7,0h1.069v4.96a6.51,6.51,0,0,1-.26,1.9,4.348,4.348,0,0,1-.77,1.5,3.371,3.371,0,0,1-1.307.98,4.542,4.542,0,0,1-1.816.34,4.576,4.576,0,0,1-1.825-.34,3.388,3.388,0,0,1-1.314-.98,4.358,4.358,0,0,1-.776-1.5,6.407,6.407,0,0,1-.264-1.9v-4.96h1.069v4.96a4.017,4.017,0,0,0,.851,2.71,2.853,2.853,0,0,0,2.259.98,2.778,2.778,0,0,0,2.256-.98,4.053,4.053,0,0,0,.828-2.71v-4.96Zm15.135,3.06a2.7,2.7,0,0,1-2.041,2.91l2.067,3.51h-1.16l-1.937-3.35a1.8,1.8,0,0,0-.205.01H-294v3.34h-1.07v-9.48h4.18a3.792,3.792,0,0,1,2.565.8A2.853,2.853,0,0,1-287.408-1420.85Zm-6.591,2.07h3.11q2.418,0,2.418-2.07a1.848,1.848,0,0,0-.616-1.5,2.71,2.71,0,0,0-1.8-.53H-294v4.1Zm19.874-4.1h-6.259v3.2h5.594v1.02h-5.594v3.2h6.259v1.03h-7.328v-9.48h7.328v1.03Zm10.291,3.08a7.628,7.628,0,0,1,2.9,1.03,2.017,2.017,0,0,1,.932,1.72,2.331,2.331,0,0,1-1.1,2.1,5.889,5.889,0,0,1-3.172.71,7.631,7.631,0,0,1-2.311-.35,3.532,3.532,0,0,1-1.685-1.06l0.723-.73a3.3,3.3,0,0,0,1.324.8,5.61,5.61,0,0,0,1.949.31,4.789,4.789,0,0,0,2.374-.48,1.392,1.392,0,0,0,.828-1.19,1.2,1.2,0,0,0-.245-0.78,2.081,2.081,0,0,0-.893-0.57,10.433,10.433,0,0,0-1.848-.5l-0.379-.09a11.385,11.385,0,0,1-1.5-.37,5.035,5.035,0,0,1-1.01-.42,2.145,2.145,0,0,1-.613-0.52,1.8,1.8,0,0,1-.307-0.6,2.683,2.683,0,0,1-.081-0.7,2.207,2.207,0,0,1,1.02-1.97,5.436,5.436,0,0,1,2.944-.66,5.371,5.371,0,0,1,3.658,1.22l-0.75.74a4.63,4.63,0,0,0-2.908-.94,4.506,4.506,0,0,0-2.119.42,1.265,1.265,0,0,0-.783,1.12,1.207,1.207,0,0,0,.193.71,1.777,1.777,0,0,0,.776.51,9.736,9.736,0,0,0,1.705.47Z"/>
+</svg>

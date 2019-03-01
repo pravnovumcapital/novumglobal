@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Novum Global Ventures - About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap & Jquery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,600,600i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="animate.css" rel="stylesheet" type="text/css" />
+    <link href="magnific-popup.css" rel="stylesheet">
+    <link href="sidemenu.css" rel="stylesheet">
+    <link href="flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="media-queries.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+
+<style>
+
+.white-popup {
+	position: relative;
+  background:url(img/bg-popup-top.svg) top right no-repeat, url(img/bg-popup-bottom.svg) bottom left no-repeat;
+  background-color:#fff; 
+	width: auto;
+	max-width: 750px;
+	margin: 25px auto;
+  padding: 30px;
+  padding-top:50px;
+  padding-bottom: 170px;
+  border-radius: 15px;
+}
+
+.white-popup h3 {
+  color:#333;
+  font-weight: 600;
+}
+
+.white-popup i {
+  color:#0084ff;
+  font-size: 20px;
+}
+
+.mfp-bg {
+	background: #333;
+}
+.mfp-close-btn-in .mfp-close {
+	color: #0084ff;
+}
+.mfp-close {
+	font-size: 36px;
+}
+
+
+</style>
+
+<!-- Add sidemenu -->
+<script>
+(function($){
+	// Menu Functions
+	$(document).ready(function(){
+  	$('#menuToggle').click(function(e){
+    	var $parent = $(this).parent('nav');
+      $parent.toggleClass("open");
+      var navState = $parent.hasClass('open') ? "hide" : "show";
+      $(this).attr("title", navState + " navigation");
+			// Set the timeout to the animation length in the CSS.
+			setTimeout(function(){
+				console.log("timeout set");
+				$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+			}, 200);
+    	e.preventDefault();
+  	});
+  });
+})(jQuery);
+
+          function closeSidebar(e) {
+            var obj = event.target;
+            var $parent = $('nav');
+            $parent.toggleClass("open");
+            var navState = $parent.hasClass('open') ? "hide" : "show";
+            $(obj).attr("title", navState + " navigation");
+            setTimeout(function () {
+              $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+            }, 200);
+          }
+
+   </script>
+
+</head>
+<body>
+  
+<!------------ Navigation start ------------>
+<header>
+  <div class="container">
+    <a href="index.html"><div id="logo"><img src="img/logo.png" alt=""></div></a>
+    <ul id="menu">
+      <li>
+        <div class="dropdown">
+          <a href="">What we do <i class="fa fa-angle-down"></i></a>
+          <div class="dropdown-content">
+            <p><a href="accelerator.html">Accelerator</a></p>
+            <p><a href="sto.html">STOs</a></p>
+            <p><a href="ico.html">ICOs</a></p>
+            <p><a href="fundraising.html">Fundraising</a></p>
+          </div>
+        </div>      
+      </li>
+      <!--<li>
+        <div class="dropdown">
+          <a href="">Resources <i class="fa fa-angle-down"></i></a>
+          <div class="dropdown-content">
+            <p><a href="ideas-and-analysis.html">Ideas and Analysis</a></p>
+            <p><a href="conference.html">Conference</a></p>
+            <p><a href="collaboration.html">Collaboration</a></p>
+          </div>
+        </div>      
+      </li>-->
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <nav>
+      <a href="" id="menuToggle" title="show menu">
+        <span class="navClosed"></span>
+      </a>
+      <label for="drop-1" href="#" class="nav-dropdown toggle">What we do
+        <i class="fa fa-angle-down"></i>
+      </label>
+      <a href="#">What we do</a>
+      <input type="checkbox" id="drop-1" />
+      <div class="drop-content">
+        <p>
+          <a href="accelerator.html">Accelerator</a>
+        </p>
+        <p>
+          <a href="sto.html">STOs</a>
+        </p>
+        <p>
+          <a href="ico.html">ICOs</a>
+        </p>
+        <p>
+          <a href="fundraising.html">Fundraising</a>
+        </p>
+      </div>
+      <!--<label for="drop-2" href="#" class="nav-dropdown toggle">Resources
+        <i class="fa fa-angle-down"></i>
+      </label>
+      <a href="#">Resources</a>
+      <input type="checkbox" id="drop-2" />
+      <div class="drop-content">
+        <p>
+          <a href="ideas-and-analysis.html">Ideas and Analysis</a>
+        </p>
+        <p>
+          <a href="conference.html">Conference</a>
+        </p>
+        <p>
+          <a href="collaboration.html">Collaboration</a>
+        </p>
+      </div>-->
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<!------------ Navigation end ------------>
+
+<!------------ About start ------------>
+<div class="acc-intro bg-wg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 v-pad home-l">
+        <h1 class="wow fadeInLeft" data-wow-delay="0.3s">About Novum Global Ventures</h1>
+        <br>
+        <h2 class="wow fadeInUp" data-wow-delay="0.6s">Founded in 2019</h2>
+        <br>
+        <h3 class="wow fadeInUp" data-wow-delay="0.6s">Behind Novum Global Ventures are the experienced team members behind <a href="http://novum.capital" target="_blank" style="color:#0084ff">Novum Capital</a>, which was incorporated in late 2017. Our team members’ accumulated years of experience in running tech start-ups, tech development, fundraising and marketing have contributed to the successful and compliant raise for our projects.</h3>
+      </div>
+      <div class="col-lg-6 v-pad home-r">
+        <img class="wow fadeInRight" data-wow-delay="0.6s" src="img/img-about.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<section class="team">
+  <div class="container">
+    <h2>Our Core Members</h2>
+    <div class="separator"></div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 v-pad">
+        <a href="#chris" class="open-popup-link team-img"><img src="img/team-chris.jpg" alt=""></a>
+        <br>
+        <h3>Christopher Low</h3>
+        <p>Chairman</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 v-pad">
+        <a href="#jeremy" class="open-popup-link team-img"><img src="img/team-jeremy.jpg" alt=""></a>
+        <br>
+        <h3>Jeremy Khoo</h3>
+        <p>Managing Partner</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 v-pad">
+        <a href="#victor" class="open-popup-link team-img"><img src="img/team-victor.jpg" alt=""></a>
+        <br>
+        <h3>Victor Chow</h3>
+        <p>Chief Investment Officer</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 v-pad">
+        <a href="#hal" class="open-popup-link team-img"><img src="img/team-hal.jpg" alt=""></a>
+        <br>
+        <h3>Hal Bame</h3>
+        <p>Advisor (North America)</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 v-pad">
+        <a href="#irwin" class="open-popup-link team-img"><img src="img/team-irwin.jpg" alt=""></a>
+        <br>
+        <h3>Irwin Chee</h3>
+        <p>Managing Consultant</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 v-pad">
+        <a href="#brandon" class="open-popup-link team-img"><img src="img/team-brandon.jpg" alt=""></a>
+        <br>
+        <h3>Brandon Lee</h3>
+        <p>Partner</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 v-pad">
+        <a href="#coco" class="open-popup-link team-img"><img src="img/team-coco.jpg" alt=""></a>
+        <br>
+        <h3>Coco Ong</h3>
+        <p>Marketing Chief</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 v-pad">
+        <a href="#jonas" class="open-popup-link team-img"><img src="img/team-jonas.jpg" alt=""></a>
+        <br>
+        <h3>Jonas Larsson</h3>
+        <p>Project Manager</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 v-pad">
+        <a href="#kim" class="open-popup-link team-img"><img src="img/team-kim.jpg" alt=""></a>
+        <br>
+        <h3>Kim Chang</h3>
+        <p>Project Manager</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 v-pad">
+        <a href="#jordan" class="open-popup-link team-img"><img src="img/team-jordan.jpg" alt=""></a>
+        <br>
+        <h3>Jordan Ng</h3>
+        <p>Content Marketing Executive</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 v-pad">
+        <a href="#tien" class="open-popup-link team-img"><img src="img/team-tien.jpg" alt=""></a>
+        <br>
+        <h3>Tien Trung</h3>
+        <p>Software Engineer</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 v-pad">
+        <a href="#praveen" class="open-popup-link team-img"><img src="img/team-praveen.jpg" alt=""></a>
+        <br>
+        <h3>Praveen Varayalil</h3>
+        <p>Software Engineer</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 v-pad">
+        <a href="#viet" class="open-popup-link team-img"><img src="img/team-viet.jpg" alt=""></a>
+        <br>
+        <h3>Viet Nguyen</h3>
+        <p>Developer</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 v-pad">
+        <a href="#anna" class="open-popup-link team-img"><img src="img/team-anna.jpg" alt=""></a>
+        <br>
+        <h3>Anna Dinh</h3>
+        <p>Analyst</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ STOs end ------------>
+
+<!---------- Team popup start ------------> 
+<div id="chris" class="white-popup mfp-hide sans">
+  <h2>Chris Low &nbsp;&nbsp;<a href="https://www.linkedin.com/in/christopher-low-570161/" target="_blank"><i class="fab fa-linkedin"></i></a></h2>
+  <br>
+  <h3>Chairman</h3>
+  <br><br>
+  <p>Mr Low is a seasoned technology entrepreneur for almost 20 years with a track record of building successful technology companies. His first startup called Pendulab was operating as a Software-as-a-Service offering web based collaboration solution. Within a short span of four years, Mr Low had built an incredible sales enterprise which garnered thousands of customers worldwide. Pendulab was subsequently acquired by a leading US-based private equity firm.</p>
+  <br>
+  <p>Mr Low went on to start what was Southeast Asia largest casual game platform, Viwawa, back in 2008. Within two years, Viwawa became the top 100 site for many countries in Southeast Asia, boasting millions of gamers. Seeing a growing trend for fintech, Mr Low embarked on a new venture, SoftPay Mobile, which aims to be the “Square” of Southeast Asia. Within two years, SoftPay Mobile became the largest Mobile Point of Sale company in Vietnam. Mr Low was instrumental in steering SoftPay Mobile to a strategic partnership with Indonesia’s largest bank, Bank Mandiri. Mr Low also successfully raised funds for SoftPay Mobile under Series A.</p>
+  <br>
+  <p>Mr Low graduated with a Merit in Computing from the National University of Singapore. Mr Low has been passionate about blockchain technologies since 2012. He loves to read up on the latest blockchain technologies and does some coding in his spare time.</p>
+</div>
+
+<div id="jeremy" class="white-popup mfp-hide sans">
+  <h2>Jeremy Khoo &nbsp;&nbsp;<a href="https://www.linkedin.com/in/jeremy-khoo/" target="_blank"><i class="fab fa-linkedin"></i></a></h2>
+  <br>
+  <h3>Managing Partner</h3>
+  <br><br>
+  <p>Jeremy Khoo is an international business operator, founder and blockchain entrepreneur who has successfully exited 3 venture funded companies. He is currently VP of MC Payment and Group CEO of iFashion - a leading regional retail enabler and conglomerate. Under his leadership, iFashion and it's subsidiaries have raised multiple investment rounds from venture capitalists up to Series B. iFashion was acquired by MC Payment for $23 million and Jeremy will be co-leading the combined push for a public listing on the SGX in 2018.</p>
+  <br>
+  <p>Jeremy is a Partner and Principal Consultant in Novum Capital and Enblockr, which has accelerated and invested in many high profile companies that went on to sell more than USD100M in tokens so far. Jeremy is also Managing Partner in CRC Capital, which invests into early stage blockchain innovation.</p>
+  <br>
+  <p>Jeremy co-founded retail blockchain MegaX as well as Crypto-E-Commerce store Megaxstore which is spearheading cryptocurrency mass adoption. He also spends his time advising and building more than 40 exciting blockchain projects such as Consentium, Spiking, Bountie, Viola, Vanig and W Pay. Jeremy is a VeChain ICO partner and has been involved in blockchain development as a speaker, educator and investor.</p>
+  <br>
+  <p>Jeremy obtained his Bachelor's Degree in Mechanical Engineering from the Nanyang Technological University of Singapore and also received the prestigious Sword of Honour during Officer Commissioning from the Republic of Singapore Air Force.</p>
+</div>
+
+<div id="victor" class="white-popup mfp-hide sans">
+  <h2>Victor Chow &nbsp;&nbsp;<a href="https://www.linkedin.com/in/victorchowsingapore/" target="_blank"><i class="fab fa-linkedin"></i></a></h2>
+  <br>
+  <h3>Chief Investment Officer</h3>
+  <br><br>
+  <p>Victor Chow is a serial entrepreneur and senior corporate leader with over 28 years’ experience working in venture capital, start-ups, telecommunications, ICT, cryptofunds, financial & blockchain technologies, and most recently turned business investor. As Novum's Chief Investment Officer, he is responsible for deal-sourcing, M&A activities and investments. Victor has held C-level positions across general management, strategic planning, business development, sales, marketing and global operations management in Asia Pacific, Europe and North America. He was previously the Founding CEO of Singapore-based Fintech Accelerator INSPIRASIA and was Head of Asia for Life.SREDA VC Fintech-focused fund. He was most renowned in the IT industry for his contributions as the Global Chief Operating Officer COO for Cloud Computing and NextGen Data Centers of Huawei Technologies, a leading global information and communications technology company based in Shen Zhen China. Currently, Victor is also the Venture Partner of Fatfish Blockchain Limited - an ASX listed technology venture builder and Founder of ICOWorld Exchange and Senior Advisor to the International Decentralized Association of Cryptocurrency and Blockchains (IDACB).</p>
+</div>
+
+<div id="hal" class="white-popup mfp-hide sans">
+  <h2>Hal Bame &nbsp;&nbsp;<a href="https://www.linkedin.com/in/hal-bame/" target="_blank"><i class="fab fa-linkedin"></i></a></h2>
+  <br>
+  <h3>Advisor (North America)</h3>
+  <br><br>
+  <p>Hal has over 15 yrs of global games, esports and digital experience having worked with ESL (Electronic Sports League, the world’s Leading esports company), as Managing Director for Southeast Asia, Hong Kong, Taiwan and Macau, as well as co-founder For Nemesis, a casual games esports gaming platform focusing on emerging markets. He has also held senior international roles for Sony Computer Entertainment Europe (PlayStation) and Codemasters Software Company, looking after iconic products such as PlayStation 3 and the Formula One game franchise in emerging markets. Hal is currently advising blockchain-related game and entertainment companies in both the US and Asia.</p>
+</div>
+
+<div id="irwin" class="white-popup mfp-hide sans">
+  <h2>Irwin Chee &nbsp;&nbsp;<a href="https://www.linkedin.com/in/irwinchee/" target="_blank"><i class="fab fa-linkedin"></i></a></h2>
+  <br>
+  <h3>Lead Consultant</h3>
+  <br><br>
+  <p>Starting his career in product development and marketing, Irwin was at i-Sprint Innovations, a security tech firm. During his time, he helped launched more than fourteen products and went through two rounds of acquisitions. He was cofounder at Rimu Group, a venture capital fund which invests across SEA. Irwin was also General Manager responsible for business development and operations at Rockstagvid, a Singaporean video production firm and built 3 hyperlocal media assets.</p>
+</div>
+
+<div id="brandon" class="white-popup mfp-hide sans">
+  <h2>Brandon Lee &nbsp;&nbsp;<a href="https://www.linkedin.com/in/brandon-sangsoo-lee-74a91416/" target="_blank"><i class="fab fa-linkedin"></i></a></h2>
+  <br>
+  <h3>Partner</h3>
+  <br><br>
+  <p>With many years of experience as a data scientist across industries and corporations such as Samsung and Siemens, Brandon excels in optimisation and improvisation of all processes. Prior to starting his own digital analytics company, SmartMind Inc, he was serving as the Vice President / Senior Data Scientist at Mediacorp Pte Ltd, the largest media business in Singapore. A sociable and quick-witted leader, Brandon breaks the stereotypes of a data scientist - channeling casual conversations into observations while combining his expertise to elevate and improve business processes with his findings.</p>
+</div>
+
+<div id="coco" class="white-popup mfp-hide sans">
+  <h2>Coco Ong &nbsp;&nbsp;<a href="https://www.linkedin.com/in/coco-ong/" target="_blank"><i class="fab fa-linkedin"></i></a></h2>
+  <br>
+  <h3>Marketing Chief</h3>
+  <br><br>
+  <p>With experience in handling and facilitating events since her undergraduate days, Coco started her career at GaiGai Pte Ltd, the fastest growing dating agency in Singapore, leading an events team and has since organised, marketed and executed over 100 events to date. The Love @ S.E.A.A. event was also featured in a variety show on Mediacorp, a Singaporean broadcasting station in 2017. Moving into content marketing at Paktor Pte Ltd, Coco managed digital content and traditional marketing for the company, as well as influencer marketing which managed to achieve a low CPL comparable to programmatic advertising. Prior to this, Coco graduated from NTU with a Bachelor of Fine Arts in Photography and Digital Imaging.</p>
+</div>
+
+<div id="jonas" class="white-popup mfp-hide sans">
+  <h2>Jonas Larsson &nbsp;&nbsp;<a href="https://www.linkedin.com/in/jonas87/" target="_blank"><i class="fab fa-linkedin"></i></a></h2>
+  <br>
+  <h3>Project Manager</h3>
+  <br><br>
+  <p>Jonas has over 3 years experience in client facing roles as well as in blockchain and cryptocurrency since Bitcoin’s early days.</p>
+  <br>
+  <p>Previously an Account Director at Black Marketing, he specialised in maximising international C-level clients personal branding, presence, and company brand on LinkedIn. Prior to this, he held a role of an Associate Engineer at TÜV SÜD PSB working in the Electrical & Electronics engineering field. Jonas graduated from RMIT University with Bachelor of Business in Marketing.</p>
+</div>
+
+<div id="kim" class="white-popup mfp-hide sans">
+  <h2>Kim Chang &nbsp;&nbsp;<a href="https://www.linkedin.com/in/kimberley-chang-8195a5140/" target="_blank"><i class="fab fa-linkedin"></i></a></h2>
+  <br>
+  <h3>Project Manager</h3>
+  <br><br>
+  <p>She doesn't follow rules but follows dreams. Graduated from NUS with an atypical bachelor degree with honours in Theatre Studies, Kimberley thrives on the imaginative, the dynamic and occasionally the unorthodox. Helming projects and a few years of work dealing with the front end in the service industry has led her to emphasize soft skills in effective communication both as a leader and a teamplayer. She also makes a habit of being efficient and delivering set objectives, sometimes before you expect it.</p>
+</div>
+
+<div id="jordan" class="white-popup mfp-hide sans">
+  <h2>Jordan Ng &nbsp;&nbsp;<a href="https://www.linkedin.com/in/jordan-ng-90402b142/" target="_blank"><i class="fab fa-linkedin"></i></a></h2>
+  <br>
+  <h3>Content Marketing Executive</h3>
+  <br><br>
+  <p>Jordan graduated from RMIT University with Bachelor of Business in Marketing. Being the captain of the university sports team, Jordan is respected for his tenacity, discipline and for having great camaraderie with his team. His years of experience in a competitive sport as a captain and follower earned him the ideal skills to demonstrate leadership, excellence and the ability to step back.</p>
+  <br>
+  <p></p>
+</div>
+
+<div id="tien" class="white-popup mfp-hide sans">
+  <h2>Tien Trung &nbsp;&nbsp;<a href="https://www.linkedin.com/in/jordan-ng-90402b142/" target="_blank"><i class="fab fa-linkedin"></i></a></h2>
+  <br>
+  <h3>Software Engineer</h3>
+  <br><br>
+  <p>Results-oriented software engineer with 4 years’ experience in analysis, design, development and testing. Proficient in a variety of platforms and computing languages such as Swift, Kotlin, Php and Javascript. Skilled at team collaboration while working independently in remote environments.</p>
+  <br>
+  <p></p>
+</div>
+
+<div id="praveen" class="white-popup mfp-hide sans">
+  <h2>Praveen Varayalil &nbsp;&nbsp;<a href="https://www.linkedin.com/in/praveen-v-0988a6a8" target="_blank"><i class="fab fa-linkedin"></i></a></h2>
+  <br>
+  <h3>Software Engineer</h3>
+  <br><br>
+  <p>Praveen has had a hands-on experience of 4 years in areas of Laravel framework, API development and JavaScript. Prior to that, Praveen graduated from Anna University Chennai with Masters of Computer Application.</p>
+  <br>
+  <p></p>
+</div>
+
+<div id="viet" class="white-popup mfp-hide sans">
+  <h2>Viet Nguyen &nbsp;&nbsp;<a href="https://www.linkedin.com/in/hoang-viet-nguyen-978b5067/" target="_blank"><i class="fab fa-linkedin"></i></a></h2>
+  <br>
+  <h3>Developer</h3>
+  <br><br>
+  <p>With 5 years of coding experience, Viet is a code lover experienced in android-based application and back-end web server. Previous expertise accumulated from game porting and system development. Viet also graduated from the School of University of Engineering and Technology (VNU-UET).</p>
+</div>
+
+<div id="anna" class="white-popup mfp-hide sans">
+  <h2>Anna Dinh &nbsp;&nbsp;<a href="https://www.linkedin.com/in/dinh-phuong-anh/" target="_blank"><i class="fab fa-linkedin"></i></a></h2>
+  <br>
+  <h3>Analyst</h3>
+  <br><br>
+  <p>Graduated from Vietnam National University with Bachelor of Finance and Banking, Anna has three years of experience in conducting research and financial analysis reports with a firm base in crowdfunding. Being a President of Research Community at VNU gave her an invaluable opportunity to enhance her leadership skills and demonstrate resilience and discipline. Having opportunities to travel, meet up and work with people from different cultures widens her horizon and helps her realise herself as a realistic dreamer who can be analytical as well as intuitive, confident and humble at the same time, and always eager to challenge myself to satisfy the insatiable hunger for knowledge and new experience.
+  </p>
+</div>
+<!---------- Team popup end ------------> 
+
+
+
+<footer>
+  <div class="container">
+    <p class="small-font">© 2019 Novum Global Ventures. ALL RIGHTS RESERVED.</p>
+  </div>
+</footer>
+
+<!-- Add magnifique popup --> 
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true,
+  mainClass: 'mfp-fade' // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+  
+});
+		
+    });
+</script>
+
+
+<!-- Apply class change on window scroll --> 
+<script>
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $("header")[addRemClass]('bgChange');
+});
+</script>    
+
+
+<!-- Animate element -->
+<script src="js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+
+<script>
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $("#header")[addRemClass]('bgChange');
+});
+</script>
+
+<script>
+(function(d){d.each(["backgroundColor","borderBottomColor","borderLeftColor","borderRightColor","borderTopColor","color","outlineColor"],function(f,e){d.fx.step[e]=function(g){if(!g.colorInit){g.start=c(g.elem,e);g.end=b(g.end);g.colorInit=true}g.elem.style[e]="rgb("+[Math.max(Math.min(parseInt((g.pos*(g.end[0]-g.start[0]))+g.start[0]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[1]-g.start[1]))+g.start[1]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[2]-g.start[2]))+g.start[2]),255),0)].join(",")+")"}});function b(f){var e;if(f&&f.constructor==Array&&f.length==3){return f}if(e=/rgb\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*\)/.exec(f)){return[parseInt(e[1]),parseInt(e[2]),parseInt(e[3])]}if(e=/rgb\(\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*\)/.exec(f)){return[parseFloat(e[1])*2.55,parseFloat(e[2])*2.55,parseFloat(e[3])*2.55]}if(e=/#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/.exec(f)){return[parseInt(e[1],16),parseInt(e[2],16),parseInt(e[3],16)]}if(e=/#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/.exec(f)){return[parseInt(e[1]+e[1],16),parseInt(e[2]+e[2],16),parseInt(e[3]+e[3],16)]}if(e=/rgba\(0, 0, 0, 0\)/.exec(f)){return a.transparent}return a[d.trim(f).toLowerCase()]}function c(g,e){var f;do{f=d.css(g,e);if(f!=""&&f!="transparent"||d.nodeName(g,"body")){break}e="backgroundColor"}while(g=g.parentNode);return b(f)}var a={aqua:[0,255,255],azure:[240,255,255],beige:[245,245,220],black:[0,0,0],blue:[0,0,255],brown:[165,42,42],cyan:[0,255,255],darkblue:[0,0,139],darkcyan:[0,139,139],darkgrey:[169,169,169],darkgreen:[0,100,0],darkkhaki:[189,183,107],darkmagenta:[139,0,139],darkolivegreen:[85,107,47],darkorange:[255,140,0],darkorchid:[153,50,204],darkred:[139,0,0],darksalmon:[233,150,122],darkviolet:[148,0,211],fuchsia:[255,0,255],gold:[255,215,0],green:[0,128,0],indigo:[75,0,130],khaki:[240,230,140],lightblue:[173,216,230],lightcyan:[224,255,255],lightgreen:[144,238,144],lightgrey:[211,211,211],lightpink:[255,182,193],lightyellow:[255,255,224],lime:[0,255,0],magenta:[255,0,255],maroon:[128,0,0],navy:[0,0,128],olive:[128,128,0],orange:[255,165,0],pink:[255,192,203],purple:[128,0,128],violet:[128,0,128],red:[255,0,0],silver:[192,192,192],white:[255,255,255],yellow:[255,255,0],transparent:[255,255,255]}})(jQuery);
+</script>
+
+</body>
+</html>

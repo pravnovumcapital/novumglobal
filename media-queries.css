@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (max-width: 1200px) {
+
+.features-col {
+	height: 506px;
+}
+
+.timeline-l {
+    padding-right: 75px;
+}
+
+.acc-application p {font-size: 12px !important;}
+
+}
+
+@media (max-width: 991px) {
+   
+ul#menu li {margin-left: 30px;}    
+
+ul#menu li a {font-size: 14px;}
+
+.home-l {padding-top:0px;}
+
+.features-col {
+	height: auto;
+}
+
+.program-col {
+    height: 225px;
+}
+
+.timeline h1 {
+	font-size: 60px;
+}
+
+.big-text {font-size:78px;}
+
+.home-news .v-pad {padding-top: 30px; padding-bottom: 30px;}
+.news .v-pad {padding-top: 30px; padding-bottom: 30px;}
+
+}
+
+
+@media (max-width: 768px) {
+
+body {font-size:13px;}
+h1 {font-size:30px;}
+h2 {font-size:24px;}
+h3 {font-size: 14px;}
+p {font-size:12px;}
+
+header {
+	height:70px;
+}
+
+ul#menu {display: none;}
+
+#logo {
+	width:125px;
+	height:30px;
+}
+
+label.toggle+a {
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  [id^=drop]:checked+div.drop-content {
+    display: block;
+}
+
+.program-col {
+    height: 245px;
+}
+
+.news-wrapper {
+	width:100%;
+}
+
+}
+
+@media (max-width: 576px) {
+
+.program-col {
+    height: auto;
+}
+
+.fundraising-col {
+    padding: 40px 25px;
+	height: auto;
+}
+
+.tab button {
+    margin-left: 15px;
+    width: 140px;
+    font-size: 14px;
+}
+
+}
+
+@media (max-width: 480px) {	
+
+.nav-dropdown {
+    font-size: 14px;
+}
+
+.features-col {
+	padding:40px 30px;
+}
+
+
+}
+
