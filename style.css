@@ -465,7 +465,7 @@ Accelerator Application form, news, stos, team
 
 .acc-application img {max-width: 555px;}
 
-input[type="text"], input[type="email"], select, textarea { 
+input[type="text"], input[type="email"],input[type="number"], select, textarea { 
 	background-color: #fff;
 	line-height:140%;  
 	border:1px solid #dddddd;
@@ -491,7 +491,7 @@ select {
 	background-repeat: no-repeat;
 }
 
-input[type="text"]:focus, input[type="email"]:focus,textarea:focus, select:focus{
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus,textarea:focus, select:focus{
 	outline: none !important;
 	border:1px solid #0084ff !important;
 }
