@@ -174,6 +174,10 @@
 <!------------ Accelerator Application form start ------------>
 <section class="acc-application">
   <div class="container">
+  
+  <div class="alert alert-success">
+    <strong>Success!</strong> Your application has been submited! we will get back to you soon.
+  </div>
   <form action="submitapplication.php" name="application" method="POST">
     <div class="row">
       <div class="col-lg-6 v-pad home-r">
