@@ -238,36 +238,41 @@
 
 <!---------- Sto popup start ------------> 
 <div id="sto" class="white-popup mfp-hide sans">
+  <form  id="contactForm" name="contactForm" action="mailsto.php">
   <h2>Please fill in the form</h2>
   <br><br>
   <div class="v-pad">
     <p>I want to launch</p>
-    <select>
-        <option>Please select</option>
-        <option>ICO</option>
-        <option>STO</option>
-        <option>Both</option>
+    <select id="launch_type" name="launch_type">
+        <option value="">Please select</option>
+        <option value="ICO">ICO</option>
+        <option value="STO">STO</option>
+        <option value="Both">Both</option>
     </select>
   </div>
-  <div class="v-pad">
+  <div class="v-pad inputDiv">
     <p>Full Name</p>
-    <input type="text" class="input-style">
+    <input type="text" class="input-style" id="contact_name" name="name">
+    <span class="errorMsg"></span>
   </div>
-  <div class="v-pad">
+  <div class="v-pad inputDiv">
     <p>Email Address</p>
-    <input type="email" class="input-style">
+    <input type="email" class="input-style" id="contact_email" name="email">
+    <span class="errorMsg"></span>
   </div>
-  <div class="v-pad">
-    <p>Email Address</p>
-    <input type="text" class="input-style">
+  <div class="v-pad inputDiv">
+    <p>Contact Number</p>
+    <input type="number" class="input-style" id="contact_number" name="number">
+    <span class="errorMsg"></span>
   </div>
-  <div class="v-pad">
+  <div class="v-pad inputDiv">
     <p>Message</p>
-    <textarea class="input-style"></textarea>
+    <textarea class="input-style" id="contact_helptext" name="helptext"></textarea>
+    <span class="errorMsg"></span>
   </div>
   <br>
   <div style="float:right;">
-    <button class="btn">Submit</button>
+    <button class="btn" onclick="makeAppointment()">Submit</button>
   </div>
 </div>
 <!---------- Sto popup start ------------> 
@@ -312,7 +317,65 @@ $(window).scroll(function() {
     $("header")[addRemClass]('bgChange');
 });
 </script>    
-
+<script>
+  
+  function makeAppointment(){
+      var form = $('#contactForm');
+      //console.log('Here');
+      console.log($('#contactForm').serialize());
+      
+      var url = form.attr('action');
+      var error = 0;
+      $('.errorMsg').html('');
+      var inputs = ['contact_name','contact_email','contact_number','contact_helptext','launch_type'];
+      if($('#contact_name').val() == '')
+      {
+        $('#contact_name').closest('.inputDiv').find('.errorMsg').html('Name should not be empty.');
+        error = 1;
+      }
+      if($('#contact_email').val() == '')
+      {
+        $('#contact_email').closest('.inputDiv').find('.errorMsg').html('Email should not be empty.');
+        error = 1;
+      }
+      if($('#launch_type').val() == '')
+      {
+        $('#launch_type').closest('.inputDiv').find('.errorMsg').html('Please select launch type.');
+        error = 1;
+      }
+      if($('#contact_number').val() == '')
+      {
+        $('#contact_number').closest('.inputDiv').find('.errorMsg').html('Contact No should not be empty.');
+        error = 1;
+      }
+      //$.magnificPopup.close()
+      if(error == 1)
+      return false;
+      var postData = {
+        name:$('#contact_name').val(),
+        email:$('#contact_email').val(),
+        company:$('#launch_type').val(),
+        number:$('#contact_number').val(),
+        message:$('#contact_helptext').val()
+      };
+      $.ajax({
+            type: "POST",
+            url: url,
+            data: postData, // serializes the form's elements.
+            success: function(data)
+            {
+                alert(data); // show response from the php script.
+                $("#contactForm").find("input[type=text], textarea").val("");
+                $.magnificPopup.close();
+            }
+          });
+          inputs.forEach(function(item, index){
+            $('#'+item).val('');
+          });
+          $('#contactForm')[0].reset();
+      //e.preventDefault();
+  }
+</script>
 
 <!-- Animate element -->
 <script src="js/wow.js"></script>
@@ -330,6 +393,16 @@ $(window).scroll(function() {
 <script>
 (function(d){d.each(["backgroundColor","borderBottomColor","borderLeftColor","borderRightColor","borderTopColor","color","outlineColor"],function(f,e){d.fx.step[e]=function(g){if(!g.colorInit){g.start=c(g.elem,e);g.end=b(g.end);g.colorInit=true}g.elem.style[e]="rgb("+[Math.max(Math.min(parseInt((g.pos*(g.end[0]-g.start[0]))+g.start[0]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[1]-g.start[1]))+g.start[1]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[2]-g.start[2]))+g.start[2]),255),0)].join(",")+")"}});function b(f){var e;if(f&&f.constructor==Array&&f.length==3){return f}if(e=/rgb\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*\)/.exec(f)){return[parseInt(e[1]),parseInt(e[2]),parseInt(e[3])]}if(e=/rgb\(\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*\)/.exec(f)){return[parseFloat(e[1])*2.55,parseFloat(e[2])*2.55,parseFloat(e[3])*2.55]}if(e=/#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/.exec(f)){return[parseInt(e[1],16),parseInt(e[2],16),parseInt(e[3],16)]}if(e=/#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/.exec(f)){return[parseInt(e[1]+e[1],16),parseInt(e[2]+e[2],16),parseInt(e[3]+e[3],16)]}if(e=/rgba\(0, 0, 0, 0\)/.exec(f)){return a.transparent}return a[d.trim(f).toLowerCase()]}function c(g,e){var f;do{f=d.css(g,e);if(f!=""&&f!="transparent"||d.nodeName(g,"body")){break}e="backgroundColor"}while(g=g.parentNode);return b(f)}var a={aqua:[0,255,255],azure:[240,255,255],beige:[245,245,220],black:[0,0,0],blue:[0,0,255],brown:[165,42,42],cyan:[0,255,255],darkblue:[0,0,139],darkcyan:[0,139,139],darkgrey:[169,169,169],darkgreen:[0,100,0],darkkhaki:[189,183,107],darkmagenta:[139,0,139],darkolivegreen:[85,107,47],darkorange:[255,140,0],darkorchid:[153,50,204],darkred:[139,0,0],darksalmon:[233,150,122],darkviolet:[148,0,211],fuchsia:[255,0,255],gold:[255,215,0],green:[0,128,0],indigo:[75,0,130],khaki:[240,230,140],lightblue:[173,216,230],lightcyan:[224,255,255],lightgreen:[144,238,144],lightgrey:[211,211,211],lightpink:[255,182,193],lightyellow:[255,255,224],lime:[0,255,0],magenta:[255,0,255],maroon:[128,0,0],navy:[0,0,128],olive:[128,128,0],orange:[255,165,0],pink:[255,192,203],purple:[128,0,128],violet:[128,0,128],red:[255,0,0],silver:[192,192,192],white:[255,255,255],yellow:[255,255,0],transparent:[255,255,255]}})(jQuery);
 </script>
-
+<style>
+  .errorMsg{
+    position: absolute;
+    color: red;
+    left: 7px;
+    bottom: -7px;
+  }
+  .inputDiv{
+    position: relative;
+  }
+  </style>
 </body>
 </html>

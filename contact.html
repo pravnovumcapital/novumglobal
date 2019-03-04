@@ -135,7 +135,7 @@
 <!------------ Navigation end ------------>
 
 <!------------ Contact start ------------>
-<form  id="contactForm" name="contactForm" action="mail.php"></form>
+<form  id="contactForm" name="contactForm" action="mail.php">
 <section class="contact">
   <div class="bg-white-l"></div>
   <div class="bg-white-r"></div>
@@ -262,7 +262,7 @@ $(window).scroll(function() {
             {
                 alert(data); // show response from the php script.
                 $("#contactForm").find("input[type=text], textarea").val("");
-                $.magnificPopup.close();
+                //$.magnificPopup.close();
             }
           });
           inputs.forEach(function(item, index){
