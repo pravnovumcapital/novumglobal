@@ -241,7 +241,7 @@
   <form  id="contactForm" name="contactForm" action="mailsto.php">
   <h2>Please fill in the form</h2>
   <br><br>
-  <div class="v-pad">
+  <div class="v-pad inputDiv">
     <p>I want to launch</p>
     <select id="launch_type" name="launch_type">
         <option value="">Please select</option>
@@ -249,6 +249,7 @@
         <option value="STO">STO</option>
         <option value="Both">Both</option>
     </select>
+    <span class="errorMsg"></span>
   </div>
   <div class="v-pad inputDiv">
     <p>Full Name</p>
@@ -272,7 +273,7 @@
   </div>
   <br>
   <div style="float:right;">
-    <button class="btn" onclick="makeAppointment()">Submit</button>
+    <button class="btn" onclick="makeAppointment(event)">Submit</button>
   </div>
 </div>
 <!---------- Sto popup start ------------> 
@@ -319,7 +320,8 @@ $(window).scroll(function() {
 </script>    
 <script>
   
-  function makeAppointment(){
+  function makeAppointment(event){
+      event.preventDefault();
       var form = $('#contactForm');
       //console.log('Here');
       console.log($('#contactForm').serialize());
