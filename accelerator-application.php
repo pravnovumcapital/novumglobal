@@ -176,7 +176,7 @@
   <div class="container">
   <?php if(!empty($_GET['success'])){ ?>
   <div class="alert alert-success">
-    <strong>Success!</strong> Your application has been submited! we will get back to you soon.
+    <strong>Success!</strong> Your application has been submitted. We will get back to you soon!
   </div>
   <?php } ?>
   <form action="submitapplication.php" name="application" method="POST">
@@ -188,19 +188,19 @@
         <h1>Accelerator Application Form</h1>
         <br><br>
         <div class="v-pad">
-          <p>Full Name</p>
+          <p>Full Name*</p>
           <input type="text" class="input-style" name="fullname" id="fullname">
         </div>
         <div class="v-pad">
-          <p>Email Address</p>
+          <p>Email Address*</p>
           <input type="email" class="input-style" name="email" id="email">
         </div>
         <div class="v-pad">
-          <p>Contact Number (With area code)</p>
+          <p>Contact Number (With area code)*</p>
           <input type="number" class="input-style" name="contactnumber" id="contactnumber">
         </div>
         <div class="v-pad">
-          <p>Based in</p>
+          <p>Based in*</p>
           <select name="companybasedin" id="companybasedin">
             <option value="default">Select country</option>
             <option >Afghanistan</option>
@@ -475,7 +475,9 @@
             <option value="default">Select a category</option>
             <option>Financial Services</option>
             <option>Blockchain Enterprise Solutions</option>
-            <option>Stable Currencies</option>
+            <option>Protocols & Infrastructure</option>
+	    <option>Decentralised Applications</option>
+	    <option>Stable Currencies</option>
             <option value="1">Others (state)</option>
           </select>
         </div>
@@ -528,7 +530,7 @@
           <input type="text" class="input-style" name="team_size" id="team_size">
         </div>
         <div class="v-pad">
-          <p>List all team members’ LinkedIn profile URLs - including yours.</p>
+          <p>List all team members’ LinkedIn profile URLs - including yours.*</p>
           <textarea class="input-style" name="linked_in_profiles" id="linked_in_profiles"></textarea>
         </div>  
         <div class="v-pad">
