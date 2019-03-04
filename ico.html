@@ -218,38 +218,44 @@
 
 <!---------- Sto popup start ------------> 
 <div id="sto" class="white-popup mfp-hide sans">
-  <h2>Please fill in the form</h2>
-  <br><br>
-  <div class="v-pad">
-    <p>I want to launch</p>
-    <select>
-        <option>Please select</option>
-        <option>ICO</option>
-        <option>STO</option>
-        <option>Both</option>
-    </select>
+    <form  id="contactForm" name="contactForm" action="mailsto.php">
+    <h2>Please fill in the form</h2>
+    <br><br>
+    <div class="v-pad inputDiv">
+      <p>I want to launch</p>
+      <select id="launch_type" name="launch_type">
+          <option value="">Please select</option>
+          <option value="ICO">ICO</option>
+          <option value="STO">STO</option>
+          <option value="Both">Both</option>
+      </select>
+      <span class="errorMsg"></span>
+    </div>
+    <div class="v-pad inputDiv">
+      <p>Full Name</p>
+      <input type="text" class="input-style" id="contact_name" name="name">
+      <span class="errorMsg"></span>
+    </div>
+    <div class="v-pad inputDiv">
+      <p>Email Address</p>
+      <input type="email" class="input-style" id="contact_email" name="email">
+      <span class="errorMsg"></span>
+    </div>
+    <div class="v-pad inputDiv">
+      <p>Contact Number</p>
+      <input type="number" class="input-style" id="contact_number" name="number">
+      <span class="errorMsg"></span>
+    </div>
+    <div class="v-pad inputDiv">
+      <p>Message</p>
+      <textarea class="input-style" id="contact_helptext" name="helptext"></textarea>
+      <span class="errorMsg"></span>
+    </div>
+    <br>
+    <div style="float:right;">
+      <button class="btn" onclick="makeAppointment(event)">Submit</button>
+    </div>
   </div>
-  <div class="v-pad">
-    <p>Full Name</p>
-    <input type="text" class="input-style">
-  </div>
-  <div class="v-pad">
-    <p>Email Address</p>
-    <input type="email" class="input-style">
-  </div>
-  <div class="v-pad">
-    <p>Email Address</p>
-    <input type="text" class="input-style">
-  </div>
-  <div class="v-pad">
-    <p>Message</p>
-    <textarea class="input-style"></textarea>
-  </div>
-  <br>
-  <div style="float:right;">
-    <button class="btn">Submit</button>
-  </div>
-</div>
 <!---------- Sto popup start ------------> 
 
 <!-- Add magnifique popup --> 
@@ -293,7 +299,66 @@ $(window).scroll(function() {
     $("header")[addRemClass]('bgChange');
 });
 </script>    
-
+<script>
+  
+    function makeAppointment(event){
+        event.preventDefault();
+        var form = $('#contactForm');
+        //console.log('Here');
+        console.log($('#contactForm').serialize());
+        
+        var url = form.attr('action');
+        var error = 0;
+        $('.errorMsg').html('');
+        var inputs = ['contact_name','contact_email','contact_number','contact_helptext','launch_type'];
+        if($('#contact_name').val() == '')
+        {
+          $('#contact_name').closest('.inputDiv').find('.errorMsg').html('Name should not be empty.');
+          error = 1;
+        }
+        if($('#contact_email').val() == '')
+        {
+          $('#contact_email').closest('.inputDiv').find('.errorMsg').html('Email should not be empty.');
+          error = 1;
+        }
+        if($('#launch_type').val() == '')
+        {
+          $('#launch_type').closest('.inputDiv').find('.errorMsg').html('Please select launch type.');
+          error = 1;
+        }
+        if($('#contact_number').val() == '')
+        {
+          $('#contact_number').closest('.inputDiv').find('.errorMsg').html('Contact No should not be empty.');
+          error = 1;
+        }
+        //$.magnificPopup.close()
+        if(error == 1)
+        return false;
+        var postData = {
+          name:$('#contact_name').val(),
+          email:$('#contact_email').val(),
+          launch_type:$('#launch_type').val(),
+          number:$('#contact_number').val(),
+          message:$('#contact_helptext').val()
+        };
+        $.ajax({
+              type: "POST",
+              url: url,
+              data: postData, // serializes the form's elements.
+              success: function(data)
+              {
+                  alert(data); // show response from the php script.
+                  $("#contactForm").find("input[type=text], textarea").val("");
+                  $.magnificPopup.close();
+              }
+            });
+            inputs.forEach(function(item, index){
+              $('#'+item).val('');
+            });
+            $('#contactForm')[0].reset();
+        //e.preventDefault();
+    }
+  </script>
 
 <!-- Animate element -->
 <script src="js/wow.js"></script>
