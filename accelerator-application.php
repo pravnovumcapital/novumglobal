@@ -566,12 +566,13 @@
 </section>
 <!------------ Accelerator Application form end ------------>
 
-
-
-
 <footer>
   <div class="container">
-    <p class="small-font">© 2019 Novum Global Ventures. ALL RIGHTS RESERVED.</p>
+    <div class="copyright"><p class="small-font">© 2019 Novum Global Ventures. ALL RIGHTS RESERVED.</p></div>
+    <div class="social-links">
+        <a href="http://instagram.com/novum.global" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/novumglobalventures" target="_blank"><i class="fab fa-facebook"></i></a> &nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/company/novum-global-ventures/" target="_blank"><i class="fab fa-linkedin"></i></a> &nbsp;&nbsp;&nbsp;<a href="https://medium.com/novum-global-ventures" target="_blank"><i class="fab fa-medium"></i></a> &nbsp;&nbsp;&nbsp;<a href="http://twitter.com/novumglobalv" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div style="clear:both"></div>
   </div>
 </footer>
 
