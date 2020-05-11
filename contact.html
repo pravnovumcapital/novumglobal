@@ -290,14 +290,14 @@ $(window).scroll(function() {
             success: function(data)
             {
                 alert(data); // show response from the php script.
-                //$("#contactForm").find("input[type=text], textarea").val("");
+                $("#contactForm").find("input[type=text], textarea").val("");
                 //$.magnificPopup.close();
             }
           });
-          // inputs.forEach(function(item, index){
-          //   $('#'+item).val('');
-          // });
-          // $('#contactForm')[0].reset();
+          inputs.forEach(function(item, index){
+            $('#'+item).val('');
+          });
+          $('#contactForm')[0].reset();
       //e.preventDefault();
   }
 </script>
