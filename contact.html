@@ -203,7 +203,7 @@
     </div>
     <p class="small-font">By submitting this form, you agree to allow Novum Global to contact you for future and ongoing communications by email.</p>
     <br><br>
-    <button class="btn" onclick="makeAppointment()">Submit</button>
+    <button class="btn" onclick="makeAppointment(event)">Submit</button>
   </div>
 </section>
 </form>
@@ -243,7 +243,8 @@ $(window).scroll(function() {
 </script>    
 <script>
   
-  function makeAppointment(){
+  function makeAppointment(event){
+      event.preventDefault()
       var form = $('#contactForm');
       //console.log('Here');
       console.log($('#contactForm').serialize());
